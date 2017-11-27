@@ -45,7 +45,7 @@ def run_kmeans_mini_batch(df, num_samples=100, axis='row', random_state=1000):
     random_state = random_state + random_state
 
   clust_numbers = range(num_returned_clusters)
-  clust_labels = [ 'cluster-' + str(i) for i in clust_numbers]
+  clust_labels = [ 'cluster-TEST' + str(i) for i in clust_numbers]
 
   if type(orig_labels[0]) is tuple:
     found_cats = True
@@ -64,7 +64,7 @@ def run_kmeans_mini_batch(df, num_samples=100, axis='row', random_state=1000):
   for i in range(num_returned_clusters):
 
     inst_name = 'Cluster: ' + clust_labels[i]
-    num_in_clust_string =  'number in clust: '+ str(cluster_pop[i])
+    num_in_clust_string =  'number TEST in clust: '+ str(cluster_pop[i])
 
     inst_tuple = (inst_name,)
 
